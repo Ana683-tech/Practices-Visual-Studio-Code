@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas en HTML</title>
+</head>
+
+<body>
+    <h1>Ejemplos de tablas en HTML</h1>
+    <table>
+        <!-- table es para crear una tabla -->
+        <tr>
+            <!-- el elemento tr se usa para definir las filas de la tabla  -->
+            <th>Nombre</th>
+            <!-- el elemento th es usado para crear las columnas o en este caso las celdas de encabezado -->
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>
+                <!-- el elemento td es usado para crear cenldads pero estas no son de encabezados si no que son celdas de datos -->
+                sophies
+            </td>
+            <td> castro</td>
+            <td>3310518075</td>
+            <td>sophies@gamil.com</td>
+        </tr>
+        <tr>
+            <td>juan</td>
+            <td>hernandez</td>
+            <td>1258794635</td>
+            <td>juan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>esteban</td>
+            <td>cruz</td>
+            <td>7895463281</td>
+            <td>esteban@gmail.com</td>
+        </tr>
+    </table>
+
+<hr>
+<br>
+    <table>
+        <caption>
+            Resportes trimestral de ventas
+        </caption>
+        <thead>
+            <tr>
+                <th >Mes</th>
+                <th>Vendedor</th>
+                <th>Importe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Enero</td>
+                <td>Luis</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>200,000</td>
+
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>5,000</td>
+
+            </tr>
+            <tr>
+                <th>Subtotal</th>
+                <td>1,050,000</td>
+
+            </tr>
+        </tbody>
+        <tbody>
+              <tr>
+                <td rowspan="4">Febrero</td>
+                <td>Luis</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>200,000</td>
+
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>5,000</td>
+
+            </tr>
+            <tr>
+                <th>Subtotal</th>
+                <td>1,050,000</td>
+
+            </tr>
+        </tbody>
+        <tbody>
+             <tr>
+                <td rowspan="4">Marzo</td>
+                <td>Luis</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>200,000</td>
+
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>5,000</td>
+
+            </tr>
+            <tr>
+                <th>Subtotal</th>
+                <td>1,050,000</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <td>1,5856,312489415</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

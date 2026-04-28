@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Elementos Multimedia HTML</title>
+</head>
+
+<body>
+    <h1>Multimedia en HTML</h1>
+    <h2>Reproductor de Audio</h2>
+
+    <audio controls loop>
+        <!-- el atributo loop nos ayuda ha que este audio se reproduzca de manera indefinida como un bucle -->
+        <!-- este tambien se le puede agregar el atributo de auto play este permite que cuando nos cargue la pagina enseguida 
+         se reproduzca el audio  -->
+        <source src="../audios/llorona.mp3" type="audio/mp3">
+        <source src="../audios/miedo.ogg" type="audio/ogg">
+        <source src="../audios/pedo.wav" type="audio/wav">
+
+        <p>Tu navegador no soporta el elemento de audio.</p>
+    </audio>
+
+    <h2>Reproducto de Video</h2>
+    <video controls style="width: 600px; height: 600px;">
+        <source src="../audios/juego.mp4" type="video/mp4">
+        <source src="../audios/juego.ogg" type="video/ogg">
+        <source src="../audios/juego.webm" type="video/webm">
+
+
+    </video>
+
+
+</body>
+
+</html>

@@ -9,45 +9,97 @@
 
 <body>
     <h1>Formulario HTML</h1>
-    <form action="" method="post"></form>
-    <label for="suNombre">Nombre</label>
-    <input type="text" name="nombre" id="suNombre" size="50" autocomplete="on" autofocus maxlength="10" required>
-    <!-- con el atributo on le estamnos diciendo que nos puede mostrar opciones de autocompletar 
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="suNombre">Nombre</label>
+        <input type="text" name="nombre" id="suNombre" size="50" autocomplete="on" autofocus maxlength="10" required>
+        <!-- con el atributo on le estamnos diciendo que nos puede mostrar opciones de autocompletar 
      y para desactivar esa opcion la podemos retirar con el autocompletador de off-->
-    <!-- el autofocus es para que cuando pulsemos la casilla se active de manera automatica -->
-    <!-- con el atributo maxlenght estamos diciendo el numero maximo de caracteres -->
-    <br>
-    <br>
-    <label for="suApellido">Apellido</label>
-    <input type="text" name="apellido" id="suApellido" size="50" autocomplete="on" autofocus maxlength="10"
-        value="Cervantes" readonly>
-    <!-- el readOnly hace que se evite cambiar el valor agregado -->
-    <br>
-    <br>
-    <label for="suDireccion">Direccion</label>
-    <input type="text" name="direccion" id="suDireccion" size="50" autocomplete="on" autofocus
-        placeholder="ejem: calle, numero de casa o apartamento" disabled>
-    <br>
-    <br>
-    <label for="suEmail">Email</label>
-    <input type="email" name="email" id="suEmail" size="50">
-    <br>
-    <br>
-    <label for="suPassword">Contraseña</label>
-    <input type="password" name="password" id="suPassword" size="50">
-    <!-- el tipo password hace que el texto que se ingrese se muestre como puntos o asteriscos para ocultar la contraseña -->
-    <br>
-    <br>
-    <label for="suDireccionweb">Direccion Web</label>
-    <input type="url" name="direccionWeb" id="suDireccionweb" size="50">
-    <br>
-    <br>
-    edad <br>
-    <input type="radio" name="edad_usuario" value="menor18" checked> menor de 18 años <br>
-    <!-- el checked hace que esta opcion se seleccione por defecto al cargar la pagina  -->
-     <input type="radio" name="edad_usuario" value="adulto"> entre 19 y 60 años <br>
-      <input type="radio" name="edad_usuario" value="envenjeciente"> mayor de 60 años <br>
+        <!-- el autofocus es para que cuando pulsemos la casilla se active de manera automatica -->
+        <!-- con el atributo maxlenght estamos diciendo el numero maximo de caracteres -->
+        <br>
+        <br>
+        <label for="suApellido">Apellido</label>
+        <input type="text" name="apellido" id="suApellido" size="50" autocomplete="on" autofocus maxlength="10"
+            value="Cervantes" readonly>
+        <!-- el readOnly hace que se evite cambiar el valor agregado -->
+        <br>
+        <br>
+        <label for="suDireccion">Direccion</label>
+        <input type="text" name="direccion" id="suDireccion" size="50" autocomplete="on" autofocus
+            placeholder="ejem: calle, numero de casa o apartamento" disabled>
+        <br>
+        <br>
+        <label for="suEmail">Email</label>
+        <input type="email" name="email" id="suEmail" size="50">
+        <br>
+        <br>
+        <label for="suPassword">Contraseña</label>
+        <input type="password" name="password" id="suPassword" size="50">
+        <!-- el tipo password hace que el texto que se ingrese se muestre como puntos o asteriscos para ocultar la contraseña -->
+        <br>
+        <br>
+        <label for="suDireccionweb">Direccion Web</label>
+        <input type="url" name="direccionWeb" id="suDireccionweb" size="50">
+        <br>
+        <br>
+        edad <br>
+        <!-- en este caso usamos los input de tipo radio eso significa que solo se puede pulsar una sola opcion -->
+        <input type="radio" name="edad_usuario" value="menor18" checked> menor de 18 años <br>
+        <!-- el checked hace que esta opcion se seleccione por defecto al cargar la pagina  -->
+        <input type="radio" name="edad_usuario" value="adulto"> entre 19 y 60 años <br>
+        <input type="radio" name="edad_usuario" value="envenjeciente"> mayor de 60 años <br> <br>
 
+        Pasatiempos
+        <br>
+        <!-- pero en este caso los input los realizamos de tipo checkbox esto significa que se puede seleccionar todas las opciones si haci se desea -->
+        <input type="checkbox" name="pasatiempo 1" value="leer"> lectura <br>
+        <input type="checkbox" name="pasatiempo 2" value="deportes"> hacer deportes <br>
+        <input type="checkbox" name="pasatiempo 3" value="musica"> escuchar musica <br>
+        <input type="checkbox" name="pasatiempo 4" value="otros" checked> otros <br>
+        <!-- el checked hace que esta opcion se seleccione por defecto al cargar la pagina  -->
+        <br>
+        cantidad <input type="number" name="cantidad" value="1" step="3">
+        <!-- el atributo step es usado para indicar si los numeros de van a incrementar de 3 en 3 o en al cantidad marcada al 
+   igual que el atributo min se usar para indicar el minimo de numero y el max para el maximo -->
+        <br>
+        <br>
+        <label for="fecha"> Fecha de Nacimiento</label>
+        <br>
+        <input type="date" name="fecha_nacimiento" id="fecha" size="50">
+        <br>
+        <br>
+        Define un rango <input type="range" name="rangos" size="50">
+        <br>
+        <br>Abjuntar archivo <input type="file" name="archivo[]" multiple size="50">
+        <!-- el atributo multiple permiite que el usuario pueda abjuntar varios archivos a la vez con solo precionar tecla ctrl -->
+        <br>
+        <br>
+        Buscar: <input type="search" name="buscador" placeholder="Buscar">
+        <br>
+        <br>
+        Pais
+        <br>
+        <!-- con el elemento select se crea un menu desplegable -->
+        <select name="pais[]" id="" multiple>
+            <!-- el valor multiple nos ayuda a poder ejegir varias opciones pero para ello dentro
+             del atributo NAME debe de terminar con corchetes [] -->
+            <option value="Argentina">Argentina</option>
+            <option value="Chile" selected>Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Estados_Unidos">Estados Unidos</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Panama">Panama</option>
+            <option value="republica_dominicana">Republica Dominicana</option>
+        </select>
+        <br>
+        <br>
+        Comentarios
+        <br>
+        <textarea name="mensjae" rows="10" cols="30" id=""></textarea>
+        <!-- con el atributo de rows le estamos diciendo cuantas lineas nos permitira agregar y con el atributo cols le estamos 
+         diciendo el numero maximo de caracteres por linea -->
+
+    </form>
 </body>
 
 </html>

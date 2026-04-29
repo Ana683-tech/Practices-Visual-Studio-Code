@@ -22,16 +22,53 @@
         <p>Tu navegador no soporta el elemento de audio.</p>
     </audio>
 
-    <h2>Reproducto de Video</h2>
+    <h2>Reproductor de Video</h2>
     <video controls style="width: 600px; height: 600px;">
         <source src="../audios/juego.mp4" type="video/mp4">
         <source src="../audios/juego.ogg" type="video/ogg">
         <source src="../audios/juego.webm" type="video/webm">
-
-
     </video>
 
 
+    <h2>Recurso incrustado</h2>
+    <iframe src="https://es.wikipedia.org/wiki/Felis_catus" style="width:1400px ; height:900px ;" allowfullscreen
+        frameborder="0"></iframe>
+    <!-- el recurso allowfullscreen nos ayuda a que el contenido se muestre en la pantalla completa del navegador -->
+    <br>
+    <br>
+    <iframe width="1026" height="577" src="https://www.youtube.com/embed/C00Ur95NYEg"
+        title="Bad Bunny &amp; Mora   Late Night Drive   MX 5 Miata" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <!-- el recurso allowfullscreen nos ayuda a que el contenido se muestre en la pantalla completa del navegador -->
+    <br>
+    <br>
+
+    <!-- incurstar animacion -->
+    <object data="../images/circulo.gif" type="" style="width:300 ; height: 400px;">
+        <!-- el elemento object se usa para insertar un recurso multimedia como una animacion o un video -->
+        <!-- el atributo data se usa para indicar la ruta del recurso multimedia que queremos insertar -->
+        <!-- el atributo type se usa para indicar el tipo de recurso multimedia que queremos insertar -->
+        <!-- el uso del style es para darle un tamaño a la animacion  -->
+        <param name="movie" value="../images/circulo.gif">
+        <param name="quality" value="high">
+        <!-- al usar el quality le indicamos la calidad que debe usar para reproducir la animacion 
+         y el uso del high es para indicarle que lo reproduzca en alta calidad  -->
+        <param name="wmode" value="transparent">
+        <!-- con el uso del wmode le indicamos como debe ser rellenado el fondo del objeto 
+         y se usan el trabsparent para que el contenido se muestre sin ningun color de fondo-->
+    </object>
+    <br>
+    <br>
+    <embed src="../images/pavo.gif" type="" style="width:600px ; height:550px;">
+
+        <!-- el elemento embed se usa para incrustar aplicacion de terceras que requieren de blogind de terceros y se usa 
+         insertar contenido de formato flash -->
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>

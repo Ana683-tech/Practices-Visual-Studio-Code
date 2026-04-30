@@ -12,6 +12,7 @@
     <form action="" method="post" enctype="multipart/form-data">
         <label for="suNombre">Nombre</label>
         <input type="text" name="nombre" id="suNombre" size="50" autocomplete="on" autofocus maxlength="10" required>
+        <!-- con el atributo required estamos diciendo que el campo es obligatorio -->
         <!-- con el atributo on le estamnos diciendo que nos puede mostrar opciones de autocompletar 
      y para desactivar esa opcion la podemos retirar con el autocompletador de off-->
         <!-- el autofocus es para que cuando pulsemos la casilla se active de manera automatica -->
@@ -98,6 +99,20 @@
         <textarea name="mensjae" rows="10" cols="30" id=""></textarea>
         <!-- con el atributo de rows le estamos diciendo cuantas lineas nos permitira agregar y con el atributo cols le estamos 
          diciendo el numero maximo de caracteres por linea -->
+        <br>
+        <!-- boton para enviar datos -->
+
+        <input type="submit" name="enviar_datos" id="" value="Enviar formulario">
+        <br>
+        <!-- boton para resetear campos -->
+        <input type="reset" name="Limpiar_campos" value="Resetear formularios">
+        <br>
+        <!-- boton generico -->
+        <input type="button" name="boton_generico" value="Pulsar aqui">
+        <!-- el boton generico no tiene ninguna funcion por defecto pero se le puede agregar una funcion con javaScript -->
+        <br>
+        <button type="button"> Esto es un <b>boton</b></button>
+        <!-- la diferencia del elemento button es que se le puede contener elementos no interactivos como imagenes, iconos y no solo texto como los input -->
 
     </form>
 </body>

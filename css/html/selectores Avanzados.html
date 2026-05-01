@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados CSS</title>
+    <style>
+        /* selector universal aplica los cambios a todos los elementos  del documento */
+        /* * {
+            margin: ;
+            padding:;
+        } */
+
+        /* selector multiple */
+        h2,
+        #intro {
+            font-size: 25px;
+        }
+
+        /* selector decendiente */
+        div p {
+            background-color: blue;
+            color: white;
+
+        }
+
+        /* selector de hijos */
+        ol>li {
+            color: red;
+
+        }
+        ul > li{
+
+        color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Esto es un encabezado de nivel 1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rerum
+        autem voluptatem ipsam aperiam, natus, voluptates, exercitationem id accusamus
+        unde mollitia? Nesciunt, aliquam atque ratione exercitationem commodi accusamus
+        sunt libero.</p>
+    <a href="#"> Leer mas..</a>
+
+    <h2>Esto es un encabezado de nivel 2</h2>
+
+    <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eaque
+        perspiciatis voluptatibus delectus ea dolore illo mollitia sequi unde laboriosam
+        reiciendis quas, commodi ipsum tenetur atque deserunt, modi beatae!
+        Pariatur?</p>
+
+    <div>
+        <h2>esto es otro encabezado de nivel 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio,
+            eligendi, hic delectus ullam dolore ipsum deserunt obcaecati laboriosam tenetur
+            dolores nam illum temporibus aut illo eaque incidunt aliquid consectetur!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aliquam
+            debitis sapiente deleniti animi exercitationem? Nisi sunt voluptas sed expedita,
+            debitis, libero earum dolore modi quod harum nihil pariatur inventore.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex? Enim
+        recusandae, aliquam ducimus id assumenda inventore neque provident numquam
+        architecto accusantium maiores quos illum quis cum tempore nostrum minus.</p>
+
+    <ol>
+        <li>vegetales</li>
+        <li>frutas</li>
+        <ul>
+            <li>manzanas</li>
+            <li>uvas</li>
+            <li>fresas</li>
+        </ul>
+        <li>verduras</li>
+    </ol>
+
+</body>
+
+</html>

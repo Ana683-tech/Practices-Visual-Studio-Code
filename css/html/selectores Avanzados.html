@@ -30,11 +30,59 @@
             color: red;
 
         }
-        ul > li{
 
-        color: magenta;
+        ul>li {
+
+            color: magenta;
         }
+
+        /* selectores abyacentes */
+        div+p {
+            background-color: seagreen;
+        }
+
+        /* selector hermano general */
+        div~p {
+            font-size: 25px;
+        }
+
+        /* selector de atributos [atr]*/
+        a[target] {
+            color: magenta;
+
+        }
+
+        /* selector de atributos [atr = "valor"] */
+        a[target="_self"] {
+            color: red;
+        }
+
+        /* selector de atributos [atr^ = "valor"] */
+        p[class^="destacado"] {
+            background-color: yellow;
+        }
+
+        /* selector de atributo [atr$="valor"] */
+        a[href$=".es"] {
+            color: darkred;
+        }
+
+        /* selector de atributo [atr*="valor"] */
+        li[title*="cur"] {
+            font-size: 22px;
+        }
+
+        /* selector de atributo [atri~="valor"] */
+
+        p[class~="destacado"] {
+            color: blue ;
+        }
+        /* selector de atributos [atr|="valor"] */
+         p[class|="texto"]{
+            font-size: 18px;
+         }
     </style>
+
 </head>
 
 <body>
@@ -66,6 +114,11 @@
         recusandae, aliquam ducimus id assumenda inventore neque provident numquam
         architecto accusantium maiores quos illum quis cum tempore nostrum minus.</p>
 
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab pariatur
+        incidunt cumque dignissimos architecto ipsa inventore labore. Voluptas,
+        sint eos. Earum quibusdam nulla, dolorum tempore quas vel facere sed
+        rerum?</p>
+
     <ol>
         <li>vegetales</li>
         <li>frutas</li>
@@ -76,6 +129,42 @@
         </ul>
         <li>verduras</li>
     </ol>
+    <br>
+    <a href="#">Enlace 1</a> <br>
+    <a href="#" target="_blank">Enlace 2</a> <br>
+    <a href="#" target="_self">Enlace 3</a> <br>
+
+    <p class="destacado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+        perspiciatis modi, assumenda deleniti perferendis minima magnam reiciendis
+        ipsum iure. Atque dolores odit accusantium ex ipsum explicabo inventore eos,
+        voluptas eius.</p>
+    <p class="especial destacado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos est temporibus
+        sed nihil, itaque atque debitis aliquid consectetur assumenda eaque, non labore
+        eveniet quo fugit in sint omnis dolores et!</p>
+
+    <p class="destacado principal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ad doloribus
+        atque sunt eius similique esse quas? Delectus neque reprehenderit unde totam
+        dignissimos ratione dolore error? Molestiae corporis ullam eum!</p>
+    <p class="texto-descatacado principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi
+        nihil magni obcaecati autem perferendis modi repellendus. Eligendi,
+        autem reprehenderit dolor nobis dolores reiciendis culpa accusantium
+        blanditiis, ipsa quam ad.</p>
+        <p class="textodestacado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+        totam temporibus, est tenetur architecto qui aspernatur quae
+        reprehenderit possimus natus fugiat sint molestias! Eum, numquam error
+        placeat quia ullam eaque?</p>
+    <br>
+    <a href="http://google.com">Google</a><br>
+    <a href="https://espanol.yahoo.com/">Yahoo</a><br>
+    <a href="http://google.es">Google</a><br>
+    <a href="https://espanol.yahoo.es">Yahoo</a><br>
+    <ul>
+        <li title="curso php">Curso de php</li>
+        <li title="curso de C++">Curso de C++</li>
+        <li title="curso de JS">Curso de JS</li>
+        <li title="aprende html">Aprende HTML</li>
+
+    </ul>
 
 </body>
 

@@ -68,6 +68,36 @@
         input[type='checkbox']:checked+label {
             color: red;
         }
+
+        /* pseudo-clases segun la posicion o numero de un elemento */
+        div#posicionElemento p:first-child {
+            /*aqui estammos modificando el primer elemento que esta dentro del div por que es
+            el principal que se quiere modificar */
+            color: darkred;
+
+        }
+
+        div#posicionElemento p:nth-child(2) {
+            color: darkblue;
+        }
+
+        div#posicionElemento p:nth-child(3) {
+            color: darkorange;
+        }
+
+        div#posicionElemento p:last-child {
+            color: darkgreen;
+        }
+
+        ul li:nth-child(even) {
+            /* con el elemento even se agrega un color a  los elementos pares */
+            color: green;
+        }
+
+        ul li:nth-child(odd) {
+            /* con el odd se agrega el color solo a los elementos impares */
+            color: aqua;
+        }
     </style>
 </head>
 
@@ -78,6 +108,7 @@
     <br><br>
     <button>Pulsa Aqui</button>
     <h2>Pseudo-clases orientadas a formularios</h2>
+
     <form action="">
         <label for="suNombre">Nombre</label>
         <input type="text" id="suNombre" size="50"> <br><br>
@@ -102,6 +133,29 @@
         <input type="checkbox" name="pasatiempo2" id="swimming" value="natacion">
         <label for="swimming">Natacion</label> <br><br>
     </form>
+    <h2>pseudo-clases basadas en la posicion/numero de los elementos</h2>
+    <div id="posicionElemento">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos molestiae saepe nihil, fugiat
+            corrupti reiciendis. Harum minus ea, aut fugiat assumenda dolor nesciunt exercitationem mollitia vero nobis
+            tenetur corrupti.</p>
+        <p>Numquam quod quidem possimus, impedit error odit tempora recusandae veniam minima rem enim magni molestiae
+            suscipit nihil autem necessitatibus fuga sunt sed saepe. Placeat labore libero facere sint adipisci dolorem?
+        </p>
+        <p>Veritatis eaque dicta ipsum iure quam ipsam illo iusto unde sit dolorem, cum recusandae praesentium
+            voluptatibus minima ratione odio, repudiandae consequatur facilis? Doloremque nihil debitis at nemo tempora
+            quidem eum.</p>
+        <p>Ipsum alias necessitatibus laborum eveniet suscipit sit, voluptates,
+            ea vitae a ducimus, odio beatae! Fuga asperiores, accusantium
+            exercitationem, assumenda est quis quae rerum cumque ex, enim dolore!
+            Sunt, est repellat.</p>
+    </div>
+    <ul>
+        <li>Manzanas</li>
+        <li>Uvas</li>
+        <li>Peras</li>
+        <li>Fresas</li>
+        <li>Moras</li>
+    </ul>
 </body>
 
 </html>

@@ -4,37 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de pseudo-clases</title>
+    <title>Ejemplos de Pseudo-clases</title>
     <style>
+        /* pseudo-clases orientadas a enlaces */
         a:link {
+            /* aqui se observa el color del texto */
             color: green;
         }
 
         a:visited {
+            /* aqui podemos ver el texto en el color marcado cuando el enlace ya fue visitado */
             color: red;
         }
 
         a:hover {
+            /* aqui observamos el tamaño del texto al pasar el mouse por encima */
             font-size: 18px;
         }
+
         a:active {
+            /* aqui observamos el color del texto al hacer clic */
             color: black;
         }
-        button:hover{
-            color: red;
+
+        /* pseudo-clases orientadas a cualquier elemento */
+        button:hover {
+            color: magenta;
         }
-        button:active{
+
+        /* color que se mostrara cuando el button este activo */
+        button:active {
             color: blue;
+        }
+
+        /* pseudo-clases prientadas a formularios */
+        input:enabled {
+            background-color: lightyellow;
+        }
+
+        /* color que se pondra de color cuando se seleccione el input */
+        input:focus {
+            background-color: yellow;
+        }
+
+        /* color que se mostrara cuando el input este deshabilitado */
+        input:disabled {
+            background-color: darkgray;
+            cursor: not-allowed;
+        }
+
+        /* color que se mostrara cuando el input tenga un valor invalido */
+        input[type="email"]:invalid {
+            border: 3px solid red
+        }
+
+        /* color que se mostrara cuando el input este seleccionado */
+        input[type="radio"]:checked+label {
+            background-color: blue;
+            color: white;
+        }
+
+        /* color que se mostrara cuando el input este marcado */
+        input[type='checkbox']:checked+label {
+            color: red;
         }
     </style>
 </head>
 
 <body>
-    <h1>pseudo-clases CSS</h1>
-    <h2>pseudo-clases orientadas a objetos</h2>
-    <a href="#">Este es un enlace</a>
+    <h1>Pseudo-clases CSS</h1>
+    <h2>Pseudo-clases orientadas a enlaces</h2>
+    <a href="#">Esto es un enlace</a>
     <br><br>
-    <button>Pulsa aqui</button>
+    <button>Pulsa Aqui</button>
+    <h2>Pseudo-clases orientadas a formularios</h2>
+    <form action="">
+        <label for="suNombre">Nombre</label>
+        <input type="text" id="suNombre" size="50"> <br><br>
+
+        <label for="suApellido">Apellido</label>
+        <input type="text" id="suApellido" size="50" disabled> <br><br>
+
+        <label for="suEmail">Email</label>
+        <input type="email" id="suEmail" size="50"> <br><br>
+
+        Genero <br>
+        <input type="radio" name="Genero" id="hombre" value="masculino">
+        <label for="hombre">Masculino</label>
+
+        <input type="radio" name="Genero" id="mujer" value="femenino">
+        <label for="mujer">Femenino</label> <br><br>
+
+        pasatiempo: <br>
+        <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
+        <label for="hiking">Excursionismo</label> <br><br>
+
+        <input type="checkbox" name="pasatiempo2" id="swimming" value="natacion">
+        <label for="swimming">Natacion</label> <br><br>
+    </form>
 </body>
 
 </html>

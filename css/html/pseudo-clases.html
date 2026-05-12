@@ -99,6 +99,24 @@
             /* con el odd se agrega el color solo a los elementos impares */
             color: aqua;
         }
+
+        /* pseudo-clases del enesimo hijo :nth-child(an+b) */
+
+        ol li:nth-child(-n+5) {
+            /* con el 5n+2 se agrega el color a los elementos que siguen el patrón comenzando desde la fila 2
+            y cuando se aplica del n+6 solo se aplicara el color de la fila 6 para abjo los demas quedaran sin color y cuando se pone -n+5 
+            estamos indicando que ahi solo se aplicara a los primeros 5 */
+            background-color: yellow;
+        }
+
+        /* pesudo-clase :not */
+        div#negacion p:not(.segundo) {
+            /* aqui estamso indicando que solo se van a agregar esos acammbiar a todos los parrafos que esten dentro de div 
+            pero al segundo no se le agregara nada y se puedo mantener la sintaxis como :nth-child(2) o tambiendo como .segundo y 
+            el resultado sera exactamente lo mismo */
+            color: red;
+            font-size: 11px;
+        }
     </style>
 </head>
 
@@ -157,6 +175,33 @@
         <li>Fresas</li>
         <li>Moras</li>
     </ul>
+    <h2>pseudo-clase : nth-child(an+b)</h2>
+    <ol>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+        <li>cuarto</li>
+        <li>quinto</li>
+        <li>sexto</li>
+        <li>séptimo</li>
+        <li>octavo</li>
+        <li>noveno</li>
+        <li>décimo</li>
+    </ol>
+    <h2>pseudo-clase :not</h2>
+
+    <div id=negacion>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam quia error rerum adipisci reiciendis ducimus
+            suscipit temporibus veniam ipsum quasi cupiditate excepturi molestias tempore, fugit quos quo! Deleniti,
+            atque?</p>
+        <p class="segundo">Impedit reprehenderit natus tenetur cupiditate reiciendis modi placeat, porro maiores
+            delectus ratione minus
+            magni vel consequuntur culpa dolores recusandae eius non at molestias, ea, ab nostrum? Labore dolorem ullam
+            esse.</p>
+        <p>Voluptate, delectus alias non quidem consequuntur tempora rerum enim laboriosam esse, autem velit illum,
+            neque aliquid vel sunt eveniet fuga officiis dolores repellendus totam iusto quod. Atque quisquam dicta
+            sint.</p>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-elementos CSS</title>
+    <style>
+        /* pseudo-elemtos ::first-letter */
+        p#primeraletra::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        /* pseudo-elemto ::first-line */
+        p#primeralinea::first-line {
+            color: blue;
+        }
+
+        /* pseudo- elemento ::before y ::after*/
+        p.error::before {
+            content: url("../../images/favorite.png");
+            vertical-align: middle;
+            padding-right: 3px;
+
+        }
+
+        p.error span::after {
+            content: "FAVORITE:";
+            color: magenta; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-elementos CSS</h1>
+    <p id="primeraletra">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos fugit, deserunt tenetur
+        nisi minima
+        aspernatur enim eius quia at et saepe, eveniet veniam esse voluptatem soluta nam quod numquam inventore.</p>
+    <p id="primeralinea">Soluta quaerat natus praesentium ullam quidem veniam voluptas, harum doloribus ut vero
+        veritatis ipsum corporis
+        vel sit deserunt repellat exercitationem in laudantium voluptatibus, quibusdam ex explicabo aliquam possimus
+        tenetur! Ipsa.</p>
+    <p class="error"> <span></span>Accusantium enim quidem molestias velit obcaecati repudiandae atque dolorem id alias dignissimos sint
+        corrupti
+        earum libero, quia optio voluptatum, eius asperiores quisquam? Sint incidunt quod iusto mollitia odio nesciunt!
+        Cupiditate.</p>
+    <p> Repudiandae consequatur neque mollitia perferendis quibusdam est modi nulla nobis laudantium
+        necessitatibus earum
+        eos, velit cum cumque aut fugiat magnam doloribus eius id veniam harum, molestias accusantium. Voluptatem,
+        temporibus natus.</p>
+    <p class="error"><span></span>Tenetur natus ipsum eligendi itaque dicta dolorem enim porro rerum similique adipisci. Rerum voluptatibus in ad
+        delectus voluptates distinctio obcaecati voluptatum tempore nam consectetur libero sed, quasi possimus
+        reprehenderit aut.</p>
+</body>
+
+</html>
